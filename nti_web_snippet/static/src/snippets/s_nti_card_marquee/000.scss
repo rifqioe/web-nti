@@ -1,0 +1,58 @@
+.s_nti_card_marquee {
+    .nti-card-item {
+        /* Figma defined widths. Use fixed width so it doesn't collapse inside flex. */
+        width: 480px; 
+        min-width: 480px;
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transform-origin: center center;
+    }
+
+    /* Force the flex row group to stretch items so they have uniform height */
+    .nti_web_snippet__marquee__group {
+        align-items: stretch !important;
+    }
+    
+    .nti-card-thumbnail {
+        height: 280px;
+        /* create fade effect from the image into the body text */
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+        padding-bottom: 2rem;
+        
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+    /* Highlight on Hover Logic */
+    .nti_web_snippet__marquee__track:hover {
+        /* Dim all cards when hovered */
+        .nti-card-item {
+            opacity: 0.5;
+            filter: grayscale(0.5) blur(2px);
+            transform: scale(0.98);
+        }
+    }
+
+    .nti_web_snippet__marquee__track .nti-card-item:hover {
+        /* Highlight the specific hovered card */
+        opacity: 1;
+        filter: grayscale(0) blur(0);
+        transform: scale(1.02);
+        z-index: 10;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+}
+
+@media (max-width: 768px) {
+    .s_nti_card_marquee {
+        .nti-card-item {
+            width: 340px;
+            min-width: 340px;
+        }
+        .nti-card-thumbnail {
+            height: 220px;
+        }
+    }
+}

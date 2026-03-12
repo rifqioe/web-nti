@@ -1,0 +1,84 @@
+.nti_web_snippet__marquee {
+    --nti-marquee-duration: 30s;
+    --nti-marquee-gap: 24px;
+    --nti-marquee-logo-height: 48px;
+    --nti-marquee-distance: 0px;
+
+    overflow: hidden;
+}
+
+.nti_web_snippet__marquee__viewport {
+    overflow: hidden;
+}
+
+.nti_web_snippet__marquee--fade .nti_web_snippet__marquee__viewport {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.nti_web_snippet__marquee__track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    animation: nti_marquee_scroll var(--nti-marquee-duration) linear infinite;
+}
+
+.nti_web_snippet__marquee--reverse .nti_web_snippet__marquee__track {
+    animation-direction: reverse;
+}
+
+.nti_web_snippet__marquee--stopped .nti_web_snippet__marquee__track {
+    animation-play-state: paused;
+}
+
+.nti_web_snippet__marquee--pause-hover:hover .nti_web_snippet__marquee__track {
+    animation-play-state: paused;
+}
+
+.nti_web_snippet__marquee__group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: var(--nti-marquee-gap);
+    padding-right: var(--nti-marquee-gap);
+}
+
+.nti_web_snippet__marquee__item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nti_web_snippet__marquee:not(.nti_web_snippet__marquee--cards) .nti_web_snippet__marquee__item img {
+    height: var(--nti-marquee-logo-height);
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+}
+
+.nti_web_snippet__marquee--grayscale:not(.nti_web_snippet__marquee--cards) .nti_web_snippet__marquee__item img {
+    filter: grayscale(1) opacity(.85);
+    transition: filter 200ms ease;
+}
+
+.nti_web_snippet__marquee--grayscale:not(.nti_web_snippet__marquee--cards) .nti_web_snippet__marquee__item:hover img {
+    filter: grayscale(0) opacity(1);
+}
+
+@keyframes nti_marquee_scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-1 * var(--nti-marquee-distance)));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nti_web_snippet__marquee__track {
+        animation: none;
+        transform: none;
+    }
+}
+

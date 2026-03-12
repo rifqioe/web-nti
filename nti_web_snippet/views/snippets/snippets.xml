@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="nti_snippets" inherit_id="website.snippets" name="NTI - Add Snippets">
+        <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+            <t t-snippet="nti_web_snippet.s_nti_marquee"
+               string="Logo Marquee"
+               group="content"
+               t-thumbnail="/nti_web_snippet/static/src/img/snippets_thumbs/s_nti_marquee.svg">
+                <keywords>logo, marquee, partners, clients, sponsors, brand</keywords>
+            </t>
+            <t t-snippet="nti_web_snippet.s_nti_card_marquee"
+               string="Projects Marquee"
+               group="content">
+                <keywords>projects, portfolio, cards, marquee, infinite, carousel</keywords>
+            </t>
+            <t t-snippet="nti_web_snippet.s_nti_feedback_marquee"
+               string="Feedback Marquee (1 Line)"
+               group="content">
+                <keywords>feedback, testimonials, marquee, review</keywords>
+            </t>
+            <t t-snippet="nti_web_snippet.s_nti_feedback_marquee_2"
+               string="Feedback Marquee (2 Lines)"
+               group="content">
+                <keywords>feedback, testimonials, marquee, review, double</keywords>
+            </t>
+        </xpath>
+        <xpath expr="//snippets[@id='snippet_content']" position="inside">
+            <t t-snippet="nti_web_snippet.s_nti_marquee_inner"
+               string="Inline Marquee"
+               t-thumbnail="/nti_web_snippet/static/src/img/snippets_thumbs/s_nti_marquee.svg">
+                <keywords>logo, marquee, partners, clients, sponsors, brand, inline</keywords>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>
+

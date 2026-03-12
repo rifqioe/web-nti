@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_nti_marquee_inner" name="NTI - Inline Marquee">
+        <div class="s_nti_marquee_inner pt24 pb24" data-snippet="s_nti_marquee_inner" data-name="Inline Marquee">
+            <div class="nti_web_snippet__marquee nti_web_snippet__marquee--pause-hover nti_web_snippet__marquee--fade">
+                <div class="nti_web_snippet__marquee__viewport">
+                    <div class="nti_web_snippet__marquee__track">
+                        <div class="nti_web_snippet__marquee__group nti_web_snippet__marquee__group--primary">
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_demo_image_1" class="img img-fluid" alt=""/>
+                            </div>
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_demo_image_2" class="img img-fluid" alt=""/>
+                            </div>
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_demo_image_3" class="img img-fluid" alt=""/>
+                            </div>
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_demo_image_4" class="img img-fluid" alt=""/>
+                            </div>
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_demo_image_5" class="img img-fluid" alt=""/>
+                            </div>
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_default_image_6" class="img img-fluid" alt=""/>
+                            </div>
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_demo_image_1" class="img img-fluid" alt=""/>
+                            </div>
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_demo_image_2" class="img img-fluid" alt=""/>
+                            </div>
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_demo_image_3" class="img img-fluid" alt=""/>
+                            </div>
+                            <div class="nti_web_snippet__marquee__item">
+                                <img src="/web/image/website.s_reference_demo_image_4" class="img img-fluid" alt=""/>
+                            </div>
+                        </div>
+                        <div class="nti_web_snippet__marquee__group nti_web_snippet__marquee__group--clone" aria-hidden="true"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</odoo>

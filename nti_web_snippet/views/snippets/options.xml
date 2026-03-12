@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_nti_marquee_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="MultipleItems" data-selector=".s_nti_marquee, .s_nti_marquee_inner, .s_nti_card_marquee, .s_nti_feedback_marquee, .s_nti_feedback_marquee_2" data-target=".nti_web_snippet__marquee__group--primary">
+                <we-row string="Marquee Items">
+                    <we-button data-add-item="" data-item=".nti_web_snippet__marquee__item:last" data-select-item="" data-no-preview="true" class="o_we_bg_brand_primary">
+                        Add Item
+                    </we-button>
+                </we-row>
+            </div>
+            
+            <div data-selector=".s_nti_marquee, .s_nti_marquee_inner, .s_nti_card_marquee, .s_nti_feedback_marquee">
+                <!-- Direction -->
+                <we-button-group string="Direction" data-apply-to=".nti_web_snippet__marquee">
+                    <we-button title="Right to Left" class="fa fa-fw fa-arrow-left" data-select-class=""/>
+                    <we-button title="Left to Right" class="fa fa-fw fa-arrow-right" data-select-class="nti_web_snippet__marquee--reverse"/>
+                </we-button-group>
+            </div>
+
+            <div data-selector=".s_nti_feedback_marquee_2">
+                <!-- Dual Direction Control -->
+                <we-select string="Direction Mode">
+                    <we-button data-select-class="">Both Left ⬅️</we-button>
+                    <we-button data-select-class="nti-track-both-right">Both Right ➡️</we-button>
+                    <we-button data-select-class="nti-track-opp-lr">Top ⬅️, Bottom ➡️</we-button>
+                    <we-button data-select-class="nti-track-opp-rl">Top ➡️, Bottom ⬅️</we-button>
+                </we-select>
+            </div>
+
+            <div data-selector=".s_nti_marquee, .s_nti_marquee_inner, .s_nti_card_marquee, .s_nti_feedback_marquee, .s_nti_feedback_marquee_2">
+                <!-- Shared Options -->
+                <we-checkbox string="Fade Edges" data-apply-to=".nti_web_snippet__marquee" data-select-class="nti_web_snippet__marquee--fade"/>
+                <we-checkbox string="Pause on Hover" data-apply-to=".nti_web_snippet__marquee" data-select-class="nti_web_snippet__marquee--pause-hover"/>
+                <we-checkbox string="Stop Animation" data-apply-to=".nti_web_snippet__marquee" data-select-class="nti_web_snippet__marquee--stopped"/>
+
+                <!-- Shared Measurements -->
+                <we-input string="Spacing (Gap)" data-select-style="" data-css-property="--nti-marquee-gap" data-unit="px" data-min="8" data-max="120" data-step="1" data-prevent-important="true" data-apply-to=".nti_web_snippet__marquee"/>
+                <we-input string="Loop Duration" data-select-style="" data-css-property="--nti-marquee-duration" data-unit="s" data-min="5" data-max="120" data-step="1" data-prevent-important="true" data-apply-to=".nti_web_snippet__marquee"/>
+            </div>
+            
+            <div data-selector=".s_nti_marquee, .s_nti_marquee_inner">
+                <we-checkbox string="Grayscale" data-apply-to=".nti_web_snippet__marquee" data-select-class="nti_web_snippet__marquee--grayscale"/>
+                <we-input string="Logo Height" data-select-style="" data-css-property="--nti-marquee-logo-height" data-unit="px" data-min="24" data-max="120" data-step="1" data-prevent-important="true" data-apply-to=".nti_web_snippet__marquee"/>
+            </div>
+        </xpath>
+        <xpath expr="//t[@t-set='so_content_addition_selector']" position="inside" t-translation="off">, .s_nti_marquee_inner</xpath>
+    </template>
+
+</odoo>
+

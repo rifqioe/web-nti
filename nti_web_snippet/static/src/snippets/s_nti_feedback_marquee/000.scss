@@ -1,0 +1,63 @@
+.s_nti_feedback_marquee, .s_nti_feedback_marquee_2 {
+    .nti-feedback-item {
+        width: 400px;
+        min-width: 400px;
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transform-origin: center center;
+    }
+
+    .nti_web_snippet__marquee__group {
+        align-items: stretch !important;
+    }
+
+    /* Highlight on Hover Logic */
+    .nti_web_snippet__marquee__track:hover {
+        /* Dim all cards when hovered */
+        .nti-feedback-item {
+            opacity: 0.5;
+            filter: grayscale(0.2) blur(1px);
+            transform: scale(0.98);
+        }
+    }
+
+    .nti_web_snippet__marquee__track .nti-feedback-item:hover {
+        /* Highlight the specific hovered card */
+        opacity: 1;
+        filter: grayscale(0) blur(0);
+        transform: scale(1.02);
+        z-index: 10;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    }
+}
+
+/* Direction modes for multi-line */
+.s_nti_feedback_marquee_2.nti-track-both-right .nti_web_snippet__marquee__track {
+    animation-direction: reverse !important;
+}
+
+.s_nti_feedback_marquee_2.nti-track-opp-lr {
+    .nti-feedback-tracks > .nti_web_snippet__marquee:nth-child(1) .nti_web_snippet__marquee__track {
+        animation-direction: normal !important;
+    }
+    .nti-feedback-tracks > .nti_web_snippet__marquee:nth-child(2) .nti_web_snippet__marquee__track {
+        animation-direction: reverse !important;
+    }
+}
+
+.s_nti_feedback_marquee_2.nti-track-opp-rl {
+    .nti-feedback-tracks > .nti_web_snippet__marquee:nth-child(1) .nti_web_snippet__marquee__track {
+        animation-direction: reverse !important;
+    }
+    .nti-feedback-tracks > .nti_web_snippet__marquee:nth-child(2) .nti_web_snippet__marquee__track {
+        animation-direction: normal !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .s_nti_feedback_marquee, .s_nti_feedback_marquee_2 {
+        .nti-feedback-item {
+            width: 320px;
+            min-width: 320px;
+        }
+    }
+}

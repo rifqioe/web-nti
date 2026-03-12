@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_nti_feedback_marquee" name="NTI - Feedback Marquee">
+        <section class="s_nti_feedback_marquee pt96 pb96" data-snippet="s_nti_feedback_marquee" data-name="Feedback Marquee (1 Line)">
+            <div class="container-fluid overflow-hidden px-0">
+                <div class="container text-center mb-5 s_allow_columns">
+                    <h2 class="display-5 fw-bold text-primary mb-3">What Our Clients Say</h2>
+                    <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                        Read the success stories and feedback from the clients who have experienced our services.
+                    </p>
+                </div>
+                
+                <div class="nti_web_snippet__marquee nti_web_snippet__marquee--feedback nti_web_snippet__marquee--pause-hover nti_web_snippet__marquee--fade" style="--nti-marquee-gap: 32px; --nti-marquee-duration: 40s;">
+                    <div class="nti_web_snippet__marquee__viewport pb-3 pt-3">
+                        <div class="nti_web_snippet__marquee__track">
+                            <div class="nti_web_snippet__marquee__group nti_web_snippet__marquee__group--primary">
+                                <!-- Card 1 -->
+                                <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                    <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="/web/image/website.s_reference_demo_image_1" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="Jane"/>
+                                            <div>
+                                                <h5 class="mb-0 fw-bold text-dark fs-6">Jane Austen</h5>
+                                                <small class="text-muted">Marketing Director</small>
+                                            </div>
+                                            <div class="ms-auto text-warning fs-6">
+                                                <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/>
+                                            </div>
+                                        </div>
+                                        <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                            "Working with this team has been an absolute game-changer. They perfectly captured our vision and delivered beyond our expectations."
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                    <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="/web/image/website.s_reference_demo_image_2" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="John"/>
+                                            <div>
+                                                <h5 class="mb-0 fw-bold text-dark fs-6">John Smith</h5>
+                                                <small class="text-muted">CEO, TechCorp</small>
+                                            </div>
+                                            <div class="ms-auto text-warning fs-6">
+                                                <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/>
+                                            </div>
+                                        </div>
+                                        <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                            "A fantastic experience from start to finish. Their professionalism and dedication to quality are truly unmatched."
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                    <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="/web/image/website.s_reference_demo_image_3" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="Alice"/>
+                                            <div>
+                                                <h5 class="mb-0 fw-bold text-dark fs-6">Alice Johnson</h5>
+                                                <small class="text-muted">Product Manager</small>
+                                            </div>
+                                            <div class="ms-auto text-warning fs-6">
+                                                <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star-half-o"/>
+                                            </div>
+                                        </div>
+                                        <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                            "I was amazed by the speed and efficiency of their delivery. Highly recommended for anyone looking for top-tier execution."
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Card 4 -->
+                                <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                    <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="/web/image/website.s_reference_demo_image_4" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="Robert"/>
+                                            <div>
+                                                <h5 class="mb-0 fw-bold text-dark fs-6">Robert Brown</h5>
+                                                <small class="text-muted">Founder, StartupX</small>
+                                            </div>
+                                            <div class="ms-auto text-warning fs-6">
+                                                <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/>
+                                            </div>
+                                        </div>
+                                        <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                            "The level of support we received was outstanding. Every requirement we had was met with innovative solutions."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nti_web_snippet__marquee__group nti_web_snippet__marquee__group--clone" aria-hidden="true"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_nti_feedback_marquee_2" name="NTI - Feedback Marquee Multi">
+        <section class="s_nti_feedback_marquee_2 nti-track-opp-lr pt96 pb96" data-snippet="s_nti_feedback_marquee_2" data-name="Feedback Marquee (2 Lines)">
+            <div class="container-fluid overflow-hidden px-0">
+                <!-- Header -->
+                <div class="container text-center mb-5 s_allow_columns">
+                    <h2 class="display-5 fw-bold text-primary mb-3">What Our Clients Say</h2>
+                    <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                        Read the success stories and feedback from the clients who have experienced our services.
+                    </p>
+                </div>
+                
+                <div class="nti-feedback-tracks d-flex flex-column gap-3">
+                    <!-- Track 1 -->
+                    <div class="nti_web_snippet__marquee nti_web_snippet__marquee--feedback nti_web_snippet__marquee--pause-hover nti_web_snippet__marquee--fade" style="--nti-marquee-gap: 32px; --nti-marquee-duration: 40s;">
+                        <div class="nti_web_snippet__marquee__viewport pb-3 pt-3">
+                            <div class="nti_web_snippet__marquee__track">
+                                <div class="nti_web_snippet__marquee__group nti_web_snippet__marquee__group--primary">
+                                    <!-- Reuse cards 1-4 -->
+                                    <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                        <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="/web/image/website.s_reference_demo_image_1" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="Jane"/>
+                                                <div>
+                                                    <h5 class="mb-0 fw-bold text-dark fs-6">Jane Austen</h5>
+                                                    <small class="text-muted">Marketing Director</small>
+                                                </div>
+                                                <div class="ms-auto text-warning fs-6">
+                                                    <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                                "Working with this team has been an absolute game-changer. They perfectly captured our vision and delivered beyond our expectations."
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                        <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="/web/image/website.s_reference_demo_image_2" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="John"/>
+                                                <div>
+                                                    <h5 class="mb-0 fw-bold text-dark fs-6">John Smith</h5>
+                                                    <small class="text-muted">CEO, TechCorp</small>
+                                                </div>
+                                                <div class="ms-auto text-warning fs-6">
+                                                    <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                                "A fantastic experience from start to finish. Their professionalism and dedication to quality are truly unmatched."
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                        <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="/web/image/website.s_reference_demo_image_3" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="Alice"/>
+                                                <div>
+                                                    <h5 class="mb-0 fw-bold text-dark fs-6">Alice Johnson</h5>
+                                                    <small class="text-muted">Product Manager</small>
+                                                </div>
+                                                <div class="ms-auto text-warning fs-6">
+                                                    <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star-half-o"/> <i class="fa fa-star-o"/>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                                "I was amazed by the speed and efficiency of their delivery. Highly recommended for anyone looking for top-tier execution."
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                        <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="/web/image/website.s_reference_demo_image_4" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="Robert"/>
+                                                <div>
+                                                    <h5 class="mb-0 fw-bold text-dark fs-6">Robert Brown</h5>
+                                                    <small class="text-muted">Founder, StartupX</small>
+                                                </div>
+                                                <div class="ms-auto text-warning fs-6">
+                                                    <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                                "The level of support we received was outstanding. Every requirement we had was met with innovative solutions."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nti_web_snippet__marquee__group nti_web_snippet__marquee__group--clone" aria-hidden="true"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Track 2 -->
+                    <div class="nti_web_snippet__marquee nti_web_snippet__marquee--feedback nti_web_snippet__marquee--pause-hover nti_web_snippet__marquee--fade" style="--nti-marquee-gap: 32px; --nti-marquee-duration: 50s;">
+                        <div class="nti_web_snippet__marquee__viewport pb-3 pt-3">
+                            <div class="nti_web_snippet__marquee__track">
+                                <div class="nti_web_snippet__marquee__group nti_web_snippet__marquee__group--primary">
+                                    <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                        <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="/web/image/website.s_reference_demo_image_4" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="Robert"/>
+                                                <div>
+                                                    <h5 class="mb-0 fw-bold text-dark fs-6">Robert Brown</h5>
+                                                    <small class="text-muted">Founder, StartupX</small>
+                                                </div>
+                                                <div class="ms-auto text-warning fs-6">
+                                                    <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                                "The level of support we received was outstanding. Every requirement we had was met with innovative solutions."
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                        <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="/web/image/website.s_reference_demo_image_3" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="Alice"/>
+                                                <div>
+                                                    <h5 class="mb-0 fw-bold text-dark fs-6">Alice Johnson</h5>
+                                                    <small class="text-muted">Product Manager</small>
+                                                </div>
+                                                <div class="ms-auto text-warning fs-6">
+                                                    <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star-half-o"/> <i class="fa fa-star-o"/>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                                "I was amazed by the speed and efficiency of their delivery. Highly recommended for anyone looking for top-tier execution."
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                        <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="/web/image/website.s_reference_demo_image_2" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="John"/>
+                                                <div>
+                                                    <h5 class="mb-0 fw-bold text-dark fs-6">John Smith</h5>
+                                                    <small class="text-muted">CEO, TechCorp</small>
+                                                </div>
+                                                <div class="ms-auto text-warning fs-6">
+                                                    <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                                "A fantastic experience from start to finish. Their professionalism and dedication to quality are truly unmatched."
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="nti_web_snippet__marquee__item nti-feedback-item">
+                                        <div class="card h-100 rounded-4 bg-white shadow-sm border-0 p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <!-- using standard odoo avatar images -->
+                                                <img src="/web/image/website.s_reference_demo_image_1" class="rounded-circle me-3" style="width: 56px; height: 56px; object-fit: cover;" alt="Jane"/>
+                                                <div>
+                                                    <h5 class="mb-0 fw-bold text-dark fs-6">Jane Austen</h5>
+                                                    <small class="text-muted">Marketing Director</small>
+                                                </div>
+                                                <div class="ms-auto text-warning fs-6">
+                                                    <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/> <i class="fa fa-star"/>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-0 lh-lg" style="font-size: 0.95rem;">
+                                                "Working with this team has been an absolute game-changer. They perfectly captured our vision and delivered beyond our expectations."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nti_web_snippet__marquee__group nti_web_snippet__marquee__group--clone" aria-hidden="true"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
